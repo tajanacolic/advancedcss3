@@ -1,0 +1,101 @@
+body {
+
+    padding: 10px;
+    margin: 50px;
+
+}
+
+.heading {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+}
+
+.text {
+
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+.container {
+
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px;
+
+}
+
+.box {
+
+    width: 144px;
+    height: 130px;
+    display: flex;
+    background: url('placeholder-image.png') center center, linear-gradient(#4682B4 85%, #FFFFFF 15%);
+    background-size: cover;
+    border-radius: 10%;
+    box-shadow: 0 0 14px #A9A9A9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .heading {
+        font-size: 19px;
+    }
+
+    .text {
+        font-size: 15px;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .heading {
+        font-size: 18px;
+    }
+
+
+    .text {
+        font-size: 14px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 414px) {
+
+    .heading {
+        font-size: 17px;
+    }
+
+
+    .text {
+        font-size: 13px;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
